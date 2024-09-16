@@ -1,0 +1,9 @@
+.content .first {
+  background-color: #00f;
+  color: #fff;
+}
+
+.content .bg-img {
+  background-image: url("https://www.imgonline.com.ua/examples/random-pixels-wallpaper-big.jpg");
+  padding: 16px;
+}

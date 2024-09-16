@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  /* font-size: 12px; */
+}
+
+
+
+
+/* ###### General ###### */
+.btn {
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 5px 18px;
+}
+
+.btn-primary {
+  background-color: #8ec740;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #84b73c;
+}
+
+
+.btn-secondary {
+  background-color: white;
+  border: #8ec740 1px solid;
+}
+
+
+
+/* ###################### */
+
+/* ######## Nav ########*/
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  align-items:center ;
+}
+
+.nav-logo  {
+  width: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+
+.nav-items {
+  display: flex;
+  color: #727471;
+
+  font-size: 16px;
+  line-height: 16px;
+  list-style: none;
+
+}
+
+.nav-link {
+  margin-right: 18px;
+  font-weight: 400;
+}
+
+.nav-items .active {
+  color: #8ec740;
+}
+/* ###################### */
+
+
+/* ######## hero ######## */
+
+.hero {
+  display: flex;
+  margin: 0px 120px;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+/* ###################### */

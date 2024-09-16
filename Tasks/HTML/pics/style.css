@@ -1,0 +1,19 @@
+body {
+
+}
+
+.main {
+  /* background-color: rgb(209, 206, 206);
+  padding: 3% auto; */
+
+  width: 60%;
+  margin: auto;
+}
+
+.field {
+  margin: 1% auto;
+}
+
+.form-label{
+  width: 5%;
+}

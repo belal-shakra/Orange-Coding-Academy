@@ -1,0 +1,70 @@
+body {
+}
+
+
+#box1 {
+  width: 20%;
+
+  padding: 100px 50px;
+
+  background-color: red;
+  text-align: center;
+  color: white;
+}
+
+.radius{
+  border-radius: 2%;
+  margin: 2% auto;
+}
+
+#personal-info {
+  display: flex;
+}
+
+#my-pic {
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+
+  background-image: url("https://ichef.bbci.co.uk/news/999/cpsprodpb/15951/production/_117310488_16.jpg");
+  padding: 15px;
+}
+
+#bio {
+  padding: 3% 2%;
+}
+
+
+
+#objective{
+  background-color: rgb(200, 236, 247);
+  padding-left: 1%;
+}
+
+#experinces{
+  background-color: rgb(247, 225, 115);
+  padding-left: 1%;
+}
+
+#certificates{
+  background-color: rgb(247, 200, 242);
+  padding-left: 1%;
+}
+
+#hobbies{
+  background-color: rgb(200, 247, 205);
+  padding-left: 1%;
+}
+
+.acc-body{
+  display: none;
+}
+
+.acc {
+  cursor: pointer;
+}
+
+.radius:hover .acc-body {
+  display: block;
+}

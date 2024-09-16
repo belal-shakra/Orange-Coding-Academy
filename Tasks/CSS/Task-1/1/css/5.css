@@ -1,0 +1,7 @@
+.bg-img {
+  background-image: url("https://onlinejpgtools.com/images/examples-onlinejpgtools/random-grid.jpg");
+  background-repeat: repeat-y;
+
+
+  height: 500px;
+}

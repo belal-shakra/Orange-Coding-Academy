@@ -1,0 +1,27 @@
+.first::first-letter{
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: inline-block;
+  padding: 4px;
+  margin: auto 4px;
+  border: 1px solid ;
+}
+
+.red {
+  background-color: #f00;
+}
+
+.sky-blue {
+  background-color: #84f3ff;
+}
+
+.purple {
+  background-color: #e366e3;
+}

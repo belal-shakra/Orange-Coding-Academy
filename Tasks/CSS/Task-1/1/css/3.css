@@ -1,0 +1,29 @@
+/* ##### head ##### */
+.head{
+  background-color: #00f;
+  padding: 1px 10px;
+}
+.head h1 {
+  color: #f1f11e;
+}
+/* ################ */
+
+
+
+/* ##### head ##### */
+.red {
+  color: #f00;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sec-content {
+  margin: 14px auto;
+}
+
+.sec-content h3 {
+  color: #0f0;
+}
+
+/* ################ */
+

@@ -1,0 +1,13 @@
+section {
+  height: 40rem;
+  background-image: url("https://d2opxh93rbxzdn.cloudfront.net/original/2X/4/40cfa8ca1f24ac29cfebcb1460b5cafb213b6105.png"),
+  url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQltl9iKmGB1vofLnyF5eKHJ-C0FsNf9a4ZpA&s");
+
+  background-repeat: repeat-y, repeat-x;
+
+  background-position: 
+  left
+  top,
+  top
+  center;
+}

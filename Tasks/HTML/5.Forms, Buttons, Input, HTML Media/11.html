@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+
+
+  <style>
+    body{
+      background-color: rgb(72, 10, 164);
+      color: white;
+      font-family: system-ui;
+    }
+    .title {
+      text-align: center;
+    }
+    .title h1 {
+      margin: 0%;
+    }
+    form {
+      background-color: rgb(25, 0, 70);
+      width: 30%;
+      margin: 24px auto;
+      padding: 24px;
+    }
+    .field{
+      margin: 14px 8px;
+    }
+    input[type=text],
+    input[type=email],
+    select{
+      width: 100%;
+      height: 24px;
+      margin: 8px auto;
+    }
+    textarea{
+      margin-top: 10px;
+      width: 100%;
+    }
+    input[type=submit]{
+      background-color: rgb(68, 160, 68);
+      color: white;
+      padding: 10px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  
+  <section>
+    <div class="title">
+      <h1>Amman Coding Academy Survey Form</h1>
+      <small>Thank you for taking the time to help</small>
+    </div>
+
+
+
+    <form action="" method="post">
+
+      <div class="field">
+        <label>Name</label><br>
+        <input type="text" placeholder="Enter your name">
+      </div>
+
+      <div class="field">
+        <label>Email</label><br>
+        <input type="email" placeholder="Enter your email">
+      </div>
+
+      <div class="field">
+        <label>Age</label><br>
+        <input type="text" placeholder="Age">
+      </div>
+
+      <div class="field">
+        <label>How did you like my survey ?</label><br>
+        <select name="how" id="how">
+          <option>How did you like my survey</option>
+          <option value="1">How did you like my survey</option>
+          <option value="2">How did you like my survey</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Would you recommend my pen to a friend?</label><br>
+        <input type="radio" name="rec" id="1"> <label for="1">lorem</label> <br>
+        <input type="radio" name="rec" id="2"> <label for="2">lorem</label> <br>
+        <input type="radio" name="rec" id="3"> <label for="3">lorem</label> <br>
+      </div>
+
+      <div class="field">
+        <label>Lorem ipsum dolor sit amet.</label><br>
+        <select name="how" id="how">
+          <option>How did you like my survey</option>
+          <option value="1">How did you like my survey</option>
+          <option value="2">How did you like my survey</option>
+        </select>
+      </div>
+      
+      <div class="field">
+        <label>Lorem ipsum dolor, sit amet consectetur adipisicing.</label><br>
+        <input type="checkbox" name="rec" id="11"> <label for="11">lorem</label> <br>
+        <input type="checkbox" name="rec" id="22"> <label for="22">lorem</label> <br>
+        <input type="checkbox" name="rec" id="33"> <label for="33">lorem</label> <br>
+      </div>
+
+      <div class="field">
+        <label>Lorem ipsum dolor sit, amet consectetur adipisicing.</label>
+        <textarea name="text" id="text"placeholder="Enter your comment here.." rows="6"></textarea>
+      </div>
+
+      <div class="field">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+
+  </section>
+
+
+</body>
+</html>

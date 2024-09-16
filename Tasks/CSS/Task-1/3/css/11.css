@@ -1,0 +1,27 @@
+.container div{
+  margin: 12px;
+  height: 150px;
+  width: 250px;
+  border: 3px #000;
+}
+
+.container .box1{
+  border-style: dashed solid;
+}
+
+.container .box2{
+  border-style: solid solid dashed dashed;
+}
+
+.container .box3{
+  border-style: dotted;
+}
+
+.container .box4{
+  border-style: solid;
+}
+
+.container .box5{
+  border-style: solid;
+  border-color: #00f;
+}
