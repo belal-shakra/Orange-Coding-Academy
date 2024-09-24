@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    div {
+      padding: 6px;
+    }
+    .container {
+      width: 40%;
+      margin: auto;
+      box-shadow: 1px 2px 10px #000;
+    }
+    .grid {
+      display: grid;
+    }
+    .flex {
+      display: flex;
+    }
+
+    .header {
+      grid-template-columns: 95% auto;
+    }
+    .header .img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: red;
+    }
+    .header .menu {
+      color: red;
+    }
+    .user-info {
+      align-items: center;
+    }
+    .user-info .name p {
+      margin: 0px;
+    }
+    .user-info .name .username{
+      color: #aaa;
+      font-size: 12px;
+    }
+
+
+    .post {
+      border-bottom: 1px solid #aaa;
+    }
+    .post .img {
+      width: 98%;
+      height: 220px;
+      margin: 10px 0px;
+      background-color: red;
+    }
+
+    .footer {
+      grid-template-columns: 60% auto;
+    }
+    .footer .actions span {
+      padding: 1px 12px;
+    }
+    .footer .circle {
+      grid-template-columns: auto auto auto auto;
+    }
+    .footer .circle div {
+      width: 14px;
+      height: 8px;
+
+      border-radius: 50%;
+      padding: 8px;
+      margin: 0px 2px;
+      background-color: red;
+    }
+  </style>
+
+
+  <script src="https://kit.fontawesome.com/b23f87e5ba.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+
+  <div class="container">
+    <div class="grid header">
+      <div class="flex user-info">
+        <div class="img"></div>
+        <div class="name">
+          <p>Lorem, ipsum dolor.</p>
+          <p class="username">Lorem, ipsum.</p>
+        </div>
+      </div>
+      <div class="menu">
+        <i class="fa-solid fa-caret-down"></i>
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, expedita. Vero, accusantium minus nulla voluptatem ducimus temporibus voluptate, adipisci veniam quaerat veritatis repellat illum iure atque et quod architecto doloribus, voluptas inventore voluptatum? Corrupti distinctio nemo maiores libero consequatur ipsa. Impedit reprehenderit incidunt harum mollitia, debitis, voluptate animi tempora nam vero nesciunt eius cum, ab similique eaque officiis odit doloribus.</div>
+      <div class="img"></div>
+    </div>
+
+    <div class="grid footer">
+      <div class="actions">
+        <span>Like</span>
+        <span>Tweet</span>
+        <span>Comment</span>
+      </div>
+      <div class="grid circle">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+</body>
+</html>

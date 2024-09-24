@@ -6,31 +6,35 @@
   <title>Document</title>
 
   <style>
+    .site-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 12px;
+    }
+    .site-container * {
+      border-radius: 12px;
+    }
     header {
-      grid-area: 'header';
-      height: 100px;
+      grid-area: 1/1/ 2/5;
       background-color: orangered;
     }
     aside {
-      grid-area: 'aside';
-      width: 300px;
+      grid-area: 2/1 / 6/2;
       height: 600px;
       background-color: #00a2ff;
     }
     nav {
-      grid-area: 'nav';
-      grid-column: 2/3;
-      height: 100px;
+      grid-area: 2/2 / 3/5;
       background-color: #00ff00;
     }
-    .site.container {
-      display: grid;
-      grid-template-areas: 
-      'header header',
-      'aside nav',
-      'aside main',
-      'footer';
-      height: 50rem;
+    main {
+      grid-area: 3/2 / 6/5;
+      background-color: #ee00ff;
+    }
+    footer {
+      grid-area: 6/1 / 7/5;
+      background-color: #ff0000;
     }
   </style>
 </head>
