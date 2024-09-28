@@ -211,8 +211,7 @@ function ourJoin(string){
   let arr = []
   let word = ""
 
-  for(let count = 0; count < string.length; count++){
-    // console.log("iteration " + count)
+  for(let count = 0; count <= string.length; count++){
     if(string[count] == " " || count == string.length){
       arr.push(word)
       word = ""
