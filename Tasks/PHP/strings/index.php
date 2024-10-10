@@ -117,8 +117,141 @@ echo "
 given string.
 
 Sample Output: '1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcefghijklmnopqrstuvwxyz'
-Expected Output: 254ABCc or h242sfeDAFEe32  -> random number
+Expected Output: 254ABCc or h242sfeDAFEe32 -> random number
 </pre>
 ";
 
-// echo str_sh`."<br>";
+
+echo str_split(str_shuffle("1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcefghijklmnopqrstuvwxyz"),10)[0]."<br>";
+
+
+
+
+
+
+echo "<br>######### Question 8 #########";
+echo "
+<pre>
+8. Write a PHP script to replace the first word of the sentence with another word.
+Sample Output: 'That new trainee is so genius.'
+Sample Word: 'Our'
+Expected Result: the new trainee is so genius.
+</pre>
+";
+
+$input = "That new trainee is so genius.";
+$arr = explode(" ", $input);
+$arr[0] = "Our";
+$result = implode(" ", $arr);
+
+
+echo $result."<br>";
+
+
+
+
+echo "<br>######### Question 9 #########";
+echo "
+<pre>
+9. Write a PHP script to find the first character that is different between two strings.
+String1 : 'dragonball'
+String2 : 'dragonboll'
+Expected Result : First difference between two strings at position 7: 'a' vs 'o'
+</pre>
+";
+
+
+$str_1 = "dragonball";
+$str_2 = "dragonboll";
+
+for ($i=0; $i < strlen($str_1); $i++) { 
+  if($str_1[$i] != $str_2[$i]){
+    echo "First difference between two strings at position $i: $str_1[$i] vs $str_2[$i] <br>";
+    break;
+  }
+}
+
+
+
+
+
+echo "<br>######### Question 10 #########";
+echo "
+<pre>
+10. Write a PHP script to put a string in an array, use the (var_dump) to view the array.
+Sample Output: 'Twinkle, twinkle, little star.'
+Expected Result: array (4) {[0] => string (30) 'Twinkle, ' [1] => string (26) ' twinkle,' [2] => string (27)
+twinkle' [3] => string (26) ' little star.”}
+</pre>
+";
+
+
+var_dump(explode(" ", "Twinkle, twinkle, little star."));
+
+
+
+
+
+echo "<br>######### Question 11 #########";
+echo "
+<pre>
+11. Write a PHP script to print the next letter of the inputted letter.
+Sample Character: 'a'
+Expected Output: 'b'
+Sample Character: 'z'
+Expected Output: 'a'
+</pre>
+";
+
+$alphabet = "abcefghijklmnopqrstuvwxyz";
+$needle = "z";
+$position = strpos($alphabet, $needle);
+if($position == strlen($alphabet)-1)
+  echo $alphabet[0]."<br>";
+else
+  echo $alphabet[$position+1]."<br>";
+
+
+
+
+echo "<br>######### Question 12 #########";
+echo "
+<pre>
+12. Write a PHP script to insert a string at the specified position in a given string.
+Original String: 'The brown fox'
+Insert 'quick' between 'The' and 'brown'.
+Expected Output: 'The quick brown fox'
+</pre>
+";
+
+$arr = explode(" ", "The brown fox");
+echo "$arr[0] quick $arr[1] $arr[2]<br>";
+
+
+
+echo "<br>######### Question 13 #########";
+echo "
+<pre>
+13. Write a PHP script to remove zeroes from the given number.
+Original String: '0000657022.24'
+Expected Output: '65722.24'
+</pre>
+";
+
+echo round("0000657022.24", 2)."<br>";
+
+
+
+echo "<br>######### Question 14 #########";
+echo "
+<pre>
+14. Write a PHP script to remove part of a string.
+Original String: 'The quick brown fox jumps over the lazy dog'
+Remove 'fox' from the above string.
+Expected Output: 'The quick brown jumps over the lazy dog'
+</pre>
+";
+
+echo str_replace("fox", "", "The quick brown fox jumps over the lazy dog")."<br>";
+
+
