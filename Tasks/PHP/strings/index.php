@@ -255,3 +255,87 @@ Expected Output: 'The quick brown jumps over the lazy dog'
 echo str_replace("fox", "", "The quick brown fox jumps over the lazy dog")."<br>";
 
 
+
+
+
+echo "<br>######### Question 15 #########";
+echo "
+<pre>
+15. Write a PHP script to remove trailing dashes from a string.  
+
+Original String: 'The quick brown fox jumps over the lazy dog---' 
+Expected Output: 'The quick brown fox jumps over the lazy dog' 
+</pre>
+";
+
+echo rtrim("The quick brown fox jumps over the lazy dog", "-")."<br>";
+
+
+
+
+
+echo "<br>######### Question 16 #########";
+echo "
+<pre>
+16. Write a PHP script to remove Special characters from the following string.  
+
+Sample Output: '\"\1+2/3*2:2-3/4*3' 
+Expected Output: '1 2 3 2 2 3 4 3' 
+</pre>
+";
+
+// echo trim("\"\1+2/3*2:2-3/4*3", "-\+-*:/")."<br>";
+
+
+
+
+
+echo "<br>######### Question 17 #########";
+echo "
+<pre>
+17. Write a PHP script to select first 5 words from the following string.  
+
+Sample Output: 'The quick brown fox jumps over the lazy dog'
+Expected Output: 'The quick brown fox jumps'
+</pre>
+";
+
+$five = explode(" ", "The quick brown fox jumps over the lazy dog");
+for ($i=0; $i < 5; $i++) { 
+  echo $five[$i] ." ";
+}
+
+
+
+
+
+echo "<br>######### Question 18 #########";
+echo "
+<pre>
+18. Write a PHP script to remove comma(s) from the following numeric string. 
+
+Sample Output: '2,543.12' 
+Expected Output: 2543.12 
+</pre>
+";
+
+echo str_replace(",", "", "2,543.12")."<br>";
+
+
+
+
+
+echo "<br>######### Question 19 #########";
+echo "
+<pre>
+19. Write a PHP script to print letters from 'a' to 'z'.
+Expected Output: a b c d e f g h I j k l m n o p q r s t u v w x y z
+</pre>
+";
+
+$letters = "a b c d e f g h I j k l m n o p q r s t u v w x y z";
+$arr_letters = explode(" ", $letters);
+
+for ($i=0; $i < count($arr_letters); $i++) { 
+  echo $arr_letters[$i] ." ";
+}
