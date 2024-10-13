@@ -8,7 +8,7 @@ echo '
 "The memory of that scene for me is like a frame of film forever frozen at that moment: the red carpet, 
 the green lawn, the white house, the leaden sky. The new president and his first lady. - Richard M. 
 Nixon" 
-The words "red", "green" and "white" should come from $colors array. 
+The nums "red", "green" and "white" should come from $colors array. 
 </pre>
 ';
 
@@ -171,7 +171,7 @@ echo "
 script should display the list of the five lowest and the five highest temperatures  
 
 Sample Input:  78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 75, 76, 73, 68, 62, 73, 72, 65, 74, 62, 62, 
-65, 64, 68, 73, 75, 79, 73 
+65, 64, 68, 73, 75, 79, 73
 
 Expected Output: 
 Average Temperature is: 70.6  
@@ -180,3 +180,235 @@ List of seven highest temperatures: 76, 78, 79, 81, 85,
 </pre>
 ";
 
+$nums = [78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 75, 76, 73, 68, 62, 73, 72, 65, 74, 62, 62, 
+65, 64, 68, 73, 75, 79, 73];
+
+$sum = array_sum($nums);
+echo "The avg = ". $sum/count($nums) . "<br>";
+
+sort($nums);
+
+
+echo "<br>First 5 items"."<br>";
+for ($i=0; $i < 5; $i++) { 
+  echo $nums[$i] . " ";
+}
+
+echo "<br>Last 5 items"."<br>";
+for ($i=count($nums)-1; $i > count($nums)-5; $i--) { 
+  echo $nums[$i] . " ";
+}
+
+
+
+
+
+
+
+
+echo "<br>######### Question 8 #########";
+echo '
+<pre>
+8. Write a PHP program to merge the following two arrays.
+
+Sample Input:
+
+$array1 = array("color" => "red", 2, 4); 
+$array2 = array("a", "b", "color" => "green", "shape" => "trapezoid", 4); 
+
+Expected Output: 
+
+Array 
+( 
+    [color] => green 
+    [0] => 2 
+    [1] => 4 
+    [2] => a 
+    [3] => b 
+    [shape] => trapezoid 
+    [4] => 4 
+
+</pre>
+';
+
+$array1 = array("color" => "red", 2, 4); 
+$array2 = array("a", "b", "color" => "green", "shape" => "trapezoid", 4); 
+
+
+print_r(array_merge($array1, $array2));
+
+
+
+
+
+
+
+
+echo "<br>######### Question 9 #########";
+echo '
+<pre>
+9. Write a PHP function to change the following array\'s and convert all the strings to upper case.  
+ 
+Sample Input: 
+ 
+$colors = array("red","blue", "white","yellow"); 
+ 
+Expected Output : 
+ 
+Array 
+( 
+    RED 
+    BLUE 
+    WHITE 
+    YELLOW 
+ 
+) 
+</pre>
+';
+$colors = array("red","blue", "white","yellow"); 
+
+
+var_dump(
+  array_map(function($item){
+    return strtoupper($item);
+  }, $colors)
+);
+
+
+
+
+
+
+
+
+echo "<br>######### Question 10 #########";
+echo '
+<pre>
+10. Write a PHP function to change the following array\'s and convert all the strings to lower case.  
+
+Sample Input: 
+$colors = array("RED","BLUE", "WHITE","YELLOW"); 
+
+Expected Output :
+Array 
+( 
+    red 
+    blue 
+    white 
+    yellow 
+
+)
+</pre>
+';
+
+$colors = array("RED","BLUE", "WHITE","YELLOW"); 
+
+
+var_dump(
+  array_map(function($item){
+    return strtolower($item);
+  }, $colors)
+);
+
+
+
+
+
+echo "<br>######### Question 11 #########";
+echo '
+<pre>
+1.  Write a PHP script which displays all the numbers between 200 and 250 that are divisible by 4.  
+
+Expected Output: 200,204,208,212,216,220,224,228,232,236,240,244,248
+</pre>
+';
+$nums = [200,204,208,212,216,220,224,228,232,236,240,244,248];
+
+
+var_dump(
+  array_map(function($item){
+    if($item % 4 == 0)
+      return $item;
+  }, $nums)
+);
+
+
+
+
+echo "<br>######### Question 12 #########";
+echo '
+<pre>
+12. Write a PHP script to get the shortest/longest string length from an array.  
+ 
+Sample Input:
+$words =  array("abcd","abc","de","hjjj","g","wer") 
+ 
+Expected Output :
+The shortest array length is 1. The longest array length is 4.
+</pre>
+';
+$words =  array("abcd","abc","de","hjjj","g","wer");
+
+$min = $words[0];
+foreach ($words as $word) {
+  if (strlen($word) < strlen($min))
+    $min = $word;
+}
+echo "The min value = $min"."<br>";
+
+$max = $word[0];
+foreach ($words as $word) {
+  if (strlen($word) > strlen($max))
+    $max = $word;
+}
+echo "The max value = $max"."<br>";
+
+
+
+
+
+echo "<br>######### Question 13 #########";
+echo '
+<pre>
+13. Write a PHP script to generate unique random 10 numbers within a specific range.  
+
+Sample Input: (11, 20) 
+Sample Output: 17 16 13 20 14 19 18 15 11 12
+</pre>
+';
+
+$rep = 10;
+$nums = [];
+for ($i=0; $i < $rep; $i++) {
+  $num = rand(11, 20);
+  $flag = true;
+  
+  while($flag){
+    if (!in_array($num, $nums)){
+      array_push($nums, $num);
+      $flag = false;
+    }
+  }
+};
+
+var_dump($nums);
+
+
+
+
+echo "<br>######### Question 14 #########";
+echo '
+<pre>
+14. Write a PHP script that returns the lowest integer in the array  that is not 0.  
+
+Sample Input: $array1 = array( 2, 0, 10, 12, 6)
+Sample Output:  2 
+</pre>
+';
+$nums = array( 2, 0, 10, 12, 6);
+$min = ($nums[0] != 0)? $num[0]: null;
+foreach ($nums as $num) {
+  if (($num < $min) && $nums[$i] != 0)
+    $min = $num;
+}
+echo "The min value = $min"."<br>";
